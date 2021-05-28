@@ -2,7 +2,7 @@ darknet_ros:
   ros__parameters:
     subscribers:
       camera_reading:
-        topic: /camera/rgb/image_raw
+        topic: /intel_realsense_r200_rgb/image_raw
         queue_size: 1
     actions:
       camera_reading:
@@ -21,6 +21,6 @@ darknet_ros:
         queue_size: 1
         latch: true
     image_view:
-      enable_opencv: true
+      enable_opencv: false
       wait_key_delay: 3
       enable_console_output: true
