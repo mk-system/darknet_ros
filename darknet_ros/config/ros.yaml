@@ -2,7 +2,7 @@ darknet_ros:
   ros__parameters:
     subscribers:
       camera_reading:
-        topic: /intel_realsense_r200_rgb/image_raw
+        topic: /camera/depth/color/image_raw
         queue_size: 1
     actions:
       camera_reading:
